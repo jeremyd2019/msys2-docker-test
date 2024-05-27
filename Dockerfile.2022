@@ -14,4 +14,6 @@ RUN powershell -Command \
   msys 'find /c/\$Recycle.Bin'; \
   msys 'ps -e'; \
   rm -r -fo 'C:\$Recycle.Bin\'; \
+  msys 'find /c/\$Recycle.Bin'; \
+  Get-Process; \
   echo Done
