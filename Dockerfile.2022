@@ -11,9 +11,5 @@ RUN powershell -Command \
   msys 'pacman --noconfirm -Syuu'; \
   msys 'pacman --noconfirm -Syuu'; \
   msys 'pacman --noconfirm -Scc'; \
-  msys 'find /c/\$Recycle.Bin'; \
-  msys 'ps -e'; \
   rm -r -fo 'C:\$Recycle.Bin\'; \
-  msys 'find /c/\$Recycle.Bin'; \
-  Get-Process; \
-  echo Done
+  echo Done;
