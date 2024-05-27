@@ -11,7 +11,7 @@ RUN powershell -Command \
   msys 'pacman --noconfirm -Syuu'; \
   msys 'pacman --noconfirm -Syuu'; \
   msys 'pacman --noconfirm -Scc'; \
-  msys 'ls -la /c/\$Recycle.Bin/S-1-*/$''\355\261\255''*'; \
+  msys 'find /c/\$Recycle.Bin'; \
   msys 'ps -e'; \
   rm -r -fo 'C:\$Recycle.Bin\'; \
   echo Done
